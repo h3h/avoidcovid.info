@@ -1,3 +1,3 @@
-# DomainName.here
+# AvoidCOVID.info
 
-A simple site about something cool.
+An informational site about avoiding COVID.
