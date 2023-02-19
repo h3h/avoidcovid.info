@@ -1,0 +1,4 @@
+baseURL = 'https:/avoidcovid.info/'
+languageCode = 'en-us'
+title = 'Accurate Information for Avoiding COVID'
+theme = "mediumish-gohugo-theme"
