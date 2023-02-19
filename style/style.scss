@@ -3,33 +3,34 @@
 
 @import 'palette';
 @import 'normalize.css';
-* {
-  box-sizing: border-box;
-}
+
 body {
+  background-color: $persian-indigo;
+  box-sizing: border-box;
+  color: $sky-blue-crayola;
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
-  background-color: $c-bg-dark;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 a:link {
-  // color: #62a2c9;
+  color: $green-ryb;
   text-decoration: none;
 }
 a:visited {
-  // color: #477693;
+  color: lighten($green-ryb, 5%);
 }
 a:hover,
 a:active {
-  // color: #666;
+  color: lighten($green-ryb, 25%);
 }
 
 .page-header {
   box-sizing: border-box;
-  // color: #666;
+  color: $sky-blue-crayola;
   text-align: center;
 }
 
@@ -49,15 +50,12 @@ a:active {
 }
 a.header-link:link,
 a.header-link:visited {
-  // color: #666;
+  color: $selective-yellow;
   text-decoration: none;
-  transition: 0.4s;
 }
 a.header-link:hover,
 a.header-link:active {
-  text-shadow: 1px 1px 8px #93c9bc;
-  transition: 0.3s;
-  text-decoration: none;
+  color: mix($selective-yellow, $international-orange-aerospace, 65%);
 }
 
 .project-tagline {
@@ -101,7 +99,7 @@ a.header-link:active {
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-bottom: 1rem;
   font-weight: normal;
-  // color: #5F7585;
+  color: $platinum;
 
   @media screen and (min-width:64em) {
     margin-top: 2rem;
@@ -112,6 +110,7 @@ a.header-link:active {
 }
 
 .main-content p {
+  color: $platinum;
   margin-bottom: 1em;
 }
 .main-content code {
@@ -217,7 +216,7 @@ a.header-link:active {
   height: 2px;
   padding: 0;
   margin: 1rem 0;
-  // background-color: #eff0f1;
+  background-color: #eff0f1;
   border: 0;
 }
 
@@ -261,7 +260,8 @@ ul.post-index li {
   padding-left: 6px;
 }
 
-.post-meta {
+.main-content .post-meta {
+  color: $sky-blue-crayola;
   padding-bottom: 0.5rem;
   opacity: 0.8;
   text-align: right;
